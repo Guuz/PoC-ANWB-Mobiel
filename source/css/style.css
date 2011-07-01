@@ -209,6 +209,8 @@ nav a {
 	margin: 3px 0;
 	text-decoration: none;
 	display: inline-block;
+	-moz-transition: background-color 0.1s linear;
+	-webkit-transition: background-color 0.1s linear;
 }
 nav a:hover{
 	
@@ -306,4 +308,78 @@ only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */
+}
+
+
+
+/* MENU */
+nav#NavPanel {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	display: block;
+	
+	width: 200px;
+	
+	border: 5px solid black;
+	border-radius: 5px;
+	box-shadow: 0 3px 5px black ;
+	background-color: hsla(0, 0%, 50%, 1);
+	
+	overflow: hidden;
+}
+nav#NavPanel .bar {
+	height: 50px;
+	margin-bottom: 5px;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.09, rgb(61,61,61)),
+		color-stop(0.61, rgb(168,168,168)),
+		color-stop(1, rgb(255,255,255))
+	);
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(61,61,61) 9%,
+		rgb(168,168,168) 61%,
+		rgb(255,255,255) 100%
+	);
+}
+
+nav#NavPanel .backButton {
+	cursor: pointer;
+	display: none;
+	background-color: #ffd200;
+	color: #444;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	padding: 3px 5px;
+	margin: 3px 0 0 3px;
+}
+
+nav#NavPanel > ul {
+	position: relative;
+	left: 0;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+nav#NavPanel ul.hide {
+	left: -200px;
+}
+nav#NavPanel ul li ul {
+	position: absolute;
+	top: 0;
+	left: 400px;
+	width: 200px;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+nav#NavPanel ul li ul.show {
+	left: 200px;
+} 
+
+nav#NavPanel a {
+	width: 180px;
+	display: inline-block;
 }
