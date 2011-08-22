@@ -205,7 +205,7 @@ nav li {
 	border-bottom: 1px solid #999;
 }
 nav a {
-	padding: 3px 10px;
+	padding: 3px 1%;
 	margin: 3px 0;
 	text-decoration: none;
 	display: inline-block;
@@ -315,13 +315,17 @@ only screen and (min-device-pixel-ratio: 1.5) {
 /* MENU */
 nav#NavPanel {
 	height: 0;
+	opacity: 0;
 	width: 100%;
 	background-color: hsla(0, 0%, 50%, 1);
 	overflow: hidden;
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
-nav#NavPanel.show { height: 284px; }
+nav#NavPanel.show {
+	height: 284px;
+	opacity: 1;
+}
 nav#NavPanel .bar {
 	height: 50px;
 	margin-bottom: 5px;
@@ -374,6 +378,6 @@ nav#NavPanel ul li ul.show {
 } 
 
 nav#NavPanel a {
-	width: 180px;
+	width: 98%;
 	display: inline-block;
 }
