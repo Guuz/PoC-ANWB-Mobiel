@@ -2,18 +2,15 @@
 <!-- Conditional comment for mobile ie7 http://blogs.msdn.com/b/iemobile/ -->
 <!-- Appcache Facts http://appcachefacts.info/ -->
 <!--[if IEMobile 7 ]>    <html class="no-js iem7" manifest="default.appcache?v=1"> <![endif]-->
-<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" manifest="default.appcache?v=1"> <!--<![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
 
   <title></title>
   <meta name="description" content="">
-  <meta name="author" content="">
-  
-  <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320"/>
+  <meta name="author" content="ANWB Online">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
@@ -24,41 +21,55 @@
   <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
   <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
   <!-- Non-apple devices: -->
-  <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
-  
-  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
-  <meta http-equiv="cleartype" content="on">
-	
-	<!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
-  
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="http://www.anwb.nl/static/css/stijlgids.css">
-  <link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="http://www.anwb.nl/static/css/stijlgids.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="js/libs/modernizr-custom.js"></script>
+  <script type="text/javascript" src="js/libs/modernizr-custom.js"></script>
 </head>
 
 <body>
 
-  <div id="website">
-    <header>
-		<h1>ANWB</h1>
-    </header>
-    <nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Vakantie</a></li>
-			<li><a href="#">Vrije tijd</a></li>
-			<li><a href="#">Verkeer</a></li>
-			<li><a href="#">Auto</a></li>
-			<li><a href="#">Webwinkel</a></li>
-			<li><a href="#">Wegenwacht</a></li>
-		</ul>
-    </nav>
-    <div id="illustration"></div>
-    <div id="main" role="main">
-    	
+	<div id="website">
+		<header>
+			<h1>ANWB</h1>
+		</header>
+		<nav id="NavPanel">
+			<div class="bar">
+				<div class="backButton">Terug</div>
+			</div>
+			<ul>
+				<li class="home">
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/vakantie">Vakantie</a>
+					<ul>
+						<li><a href="/vakantie/itema">Item A</a></li>
+						<li><a href="/vakantie/itemb">Item B</a></li>
+						<li><a href="/vakantie/itemc">Item C</a></li>
+						<li><a href="/vakantie/itemd">Item D</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="/vrijetijd">Vrije tijd</a>
+					<ul>
+						<li><a href="/vrijetijd/itemx">Item X</a></li>
+						<li><a href="/vrijetijd/itemy">Item Y</a></li>
+						<li><a href="/vrijetijd/itemz">Item Z</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Verkeer</a></li>
+				<li><a href="#">Auto</a></li>
+				<li><a href="#">Webwinkel</a></li>
+				<li><a href="#">Wegenwacht</a></li>
+			</ul>
+		</nav>
+		<div id="illustration"></div>
+		<div id="main" role="main">
+
 		<article>
 			<h2>Welkom</h2>
 			<p>Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.</p>
@@ -69,39 +80,6 @@
 			<p>Lorem ipsum set dolor et yo momma.</p>
 			<p><button class="sgButton medium"><span>INSTANT button!!!</span></button></p>
 		</article>
-		<article>
-			<nav id="NavPanel">
-				<div class="bar">
-					<div class="backButton">Terug</div>
-				</div>
-				<ul>
-					<li class="home">
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="/vakantie">Vakantie</a>
-						<ul>
-							<li><a href="/vakantie/ItemA">Item A</a></li>
-							<li><a href="/vakantie/ItemB">Item B</a></li>
-							<li><a href="/vakantie/ItemC">Item C</a></li>
-							<li><a href="/vakantie/ItemD">Item D</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="/VrijeTijd">Vrije tijd</a>
-						<ul>
-							<li><a href="/VrijeTijd/ItemX">Item X</a></li>
-							<li><a href="/VrijeTijd/ItemY">Item Y</a></li>
-							<li><a href="/VrijeTijd/ItemZ">Item Z</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Verkeer</a></li>
-					<li><a href="#">Auto</a></li>
-					<li><a href="#">Webwinkel</a></li>
-					<li><a href="#">Wegenwacht</a></li>
-				</ul>
-			</nav>
-		</article
     </div>
     
     

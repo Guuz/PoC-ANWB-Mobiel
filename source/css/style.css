@@ -15,12 +15,12 @@
  * html5doctor.com/html-5-reset-stylesheet/
  */
 
-html, body, div, span, object, iframe,
+html, body, div, span, object,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+small, strong, sub, sup, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+table, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
@@ -62,7 +62,7 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
  */
 
 /* Prevent mobile zooming while remain desktop zooming: github.com/shichuan/mobile-html5-boilerplate/issues/closed#issue/14 */
-html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } 
+/* html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } */ 
 
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
