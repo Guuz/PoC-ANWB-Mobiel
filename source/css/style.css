@@ -314,21 +314,14 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 /* MENU */
 nav#NavPanel {
-	position: absolute;
-	top: 30px;
-	left: 15px;
-	display: none;
-	
-	width: 200px;
-	
-	border: 5px solid black;
-	border-radius: 5px;
-	box-shadow: 0 3px 5px black ;
+	height: 0;
+	width: 100%;
 	background-color: hsla(0, 0%, 50%, 1);
-	
 	overflow: hidden;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
 }
-nav#NavPanel.show { display: block; }
+nav#NavPanel.show { height: 284px; }
 nav#NavPanel .bar {
 	height: 50px;
 	margin-bottom: 5px;
