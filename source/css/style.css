@@ -359,18 +359,18 @@ nav#NavPanel > ul {
 	-webkit-transition: all 0.3s ease-in-out;
 }
 nav#NavPanel ul.hide {
-	left: -200px;
+	left: -100%;
 }
 nav#NavPanel ul li ul {
 	position: absolute;
 	top: 0;
-	left: 400px;
-	width: 200px;
+	left: 200%;
+	width: 100%;
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
 nav#NavPanel ul li ul.show {
-	left: 200px;
+	left: 100%;
 } 
 
 nav#NavPanel a {
