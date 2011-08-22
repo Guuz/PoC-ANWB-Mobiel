@@ -317,7 +317,7 @@ nav#NavPanel {
 	position: absolute;
 	top: 30px;
 	left: 15px;
-	display: block;
+	display: none;
 	
 	width: 200px;
 	
@@ -328,6 +328,7 @@ nav#NavPanel {
 	
 	overflow: hidden;
 }
+nav#NavPanel.show { display: block; }
 nav#NavPanel .bar {
 	height: 50px;
 	margin-bottom: 5px;
