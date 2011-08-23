@@ -184,19 +184,19 @@ h2, p {
 	padding: 10px;
 }
 header {
-	height: 30px;
-	background: white;
-	border-bottom: 3px solid #ffd200;
+	height: 49px;
+	background: white url("../img/test/header.png") no-repeat top right;
+	border-bottom:  1px solid #0055ac;
 }
-#illustration {
+#menuButton {
+	font-size:16px;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+	position: absolute;
+	right: 30px;
+	top: 15px;
 	
-	height: 50px;
-	
-	background-color: black;
-	border-bottom-right-radius: 10px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
-
 nav {
 	font-size: 16px;
 	letter-spacing: -1px;
@@ -227,7 +227,7 @@ h1 {
 	text-indent: -9999px;
 	overflow: hidden;
 	width: 141px;
-	height: 30px;
+	height: 49px;
 	background-repeat: no-repeat;
 }
 h2 {
@@ -317,7 +317,10 @@ nav#NavPanel {
 	height: 0;
 	opacity: 0;
 	width: 100%;
-	background-color: hsla(0, 0%, 50%, 1);
+	background-color: #0055ac;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 3px 3px 3px black;
 	overflow: hidden;
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -327,22 +330,9 @@ nav#NavPanel.show {
 	opacity: 1;
 }
 nav#NavPanel .bar {
-	height: 50px;
+	height: 30px;
 	margin-bottom: 5px;
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.09, rgb(61,61,61)),
-		color-stop(0.61, rgb(168,168,168)),
-		color-stop(1, rgb(255,255,255))
-	);
-	background-image: -moz-linear-gradient(
-		center bottom,
-		rgb(61,61,61) 9%,
-		rgb(168,168,168) 61%,
-		rgb(255,255,255) 100%
-	);
+	background: #0055ac;
 }
 
 nav#NavPanel .backButton {
