@@ -1,111 +1,95 @@
-<!doctype html>
-<!-- Conditional comment for mobile ie7 http://blogs.msdn.com/b/iemobile/ -->
-<!-- Appcache Facts http://appcachefacts.info/ -->
-<!--[if IEMobile 7 ]>    <html class="no-js iem7" manifest="default.appcache?v=1"> <![endif]-->
-<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
-
-<head>
-  <meta charset="utf-8">
-
-  <title></title>
-  <meta name="description" content="">
-  <meta name="author" content="ANWB Online">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
-  <!-- For iPhone 4 with high-resolution Retina display: -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
-  <!-- For first-generation iPad: -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
-  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-  <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
-  <!-- Non-apple devices: -->
-	<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
-	<!-- Main Stylesheet -->
-	<link rel="stylesheet" type="text/css" href="http://www.anwb.nl/static/css/stijlgids.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
- 
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script type="text/javascript" src="js/libs/modernizr-custom.js"></script>
-</head>
-
-<body>
-
-	<div id="website">
-		<header>
-			<h1>ANWB</h1>
-			<div id="menuButton">Menu</div>
-		</header>
-		<nav id="NavPanel">
-			<div class="bar">
-				<div class="backButton">Terug</div>
+<!doctype html> 
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+<html class="no-js">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>ANWB Mobiel POC</title>
+		<meta name="description" content="">
+		<meta name="author" content="ANWB Online">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png"><!-- For iPhone 4 with high-resolution Retina display: -->
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png"><!-- For first-generation iPad: -->
+		<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png"><!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+		<link rel="shortcut icon" href="img/l/apple-touch-icon.png"><!-- Non-apple devices: -->
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="http://www.anwb.nl/static/css/stijlgids.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script type="text/javascript" src="js/libs/modernizr-custom.js"></script>
+	</head>
+	<body>
+		<div id="website">
+			<header>
+				<h1>ANWB</h1>
+				<div id="menuButton">
+					Menu
+				</div>
+			</header>
+			<nav id="NavPanel">
+				<ul>
+					<li class="home">
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="/vakantie">Vakantie</a>
+						<ul>
+							<li><a href="/vakantie/itema">Item A</a></li>
+							<li><a href="/vakantie/itemb">Item B</a></li>
+							<li><a href="/vakantie/itemc">Item C</a></li>
+							<li><a href="/vakantie/itemd">Item D</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="/vrijetijd">Vrije tijd</a>
+						<ul>
+							<li><a href="/vrijetijd/itemx">Item X</a></li>
+							<li><a href="/vrijetijd/itemy">Item Y</a></li>
+							<li><a href="/vrijetijd/itemz">Item Z</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Verkeer</a></li>
+					<li><a href="#">Auto</a></li>
+					<li><a href="#">Webwinkel</a></li>
+					<li><a href="#">Wegenwacht</a></li>
+				</ul>
+				<div class="bar">
+					<div class="backButton">Terug</div>
+				</div>
+			</nav>
+			<div id="main" role="main">
+				<article>
+					<h2>Welkom</h2>
+					<p>
+						Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.
+					</p>
+					<p>
+						<button class="sgButton medium"><span class="right">INSTANT button!!!</span></button>
+					</p>
+					<h2>Welkom</h2>
+					<p>
+						Lorem ipsum set dolor et yo momma.
+					</p>
+					<p>
+						<button class="sgButton medium"><span class="right">INSTANT button!!!</span></button>
+					</p>
+				</article>
 			</div>
-			<ul>
-				<li class="home">
-					<a href="/">Home</a>
-				</li>
-				<li>
-					<a href="/vakantie">Vakantie</a>
-					<ul>
-						<li><a href="/vakantie/itema">Item A</a></li>
-						<li><a href="/vakantie/itemb">Item B</a></li>
-						<li><a href="/vakantie/itemc">Item C</a></li>
-						<li><a href="/vakantie/itemd">Item D</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="/vrijetijd">Vrije tijd</a>
-					<ul>
-						<li><a href="/vrijetijd/itemx">Item X</a></li>
-						<li><a href="/vrijetijd/itemy">Item Y</a></li>
-						<li><a href="/vrijetijd/itemz">Item Z</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Verkeer</a></li>
-				<li><a href="#">Auto</a></li>
-				<li><a href="#">Webwinkel</a></li>
-				<li><a href="#">Wegenwacht</a></li>
-			</ul>
-		</nav>
-		<div id="main" role="main">
+			<footer>&copy; anwb</footer>
+		</div>
+		<!-- JavaScript at the bottom for fast page loading -->
+		<script src="http://www.anwb.nl/static/js/jquery/jquery.latest.min.js"></script>
+		<script src="js/mylibs/helper.js"></script>
+		<script src="js/script.js"></script>
+		<script>// iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/MBP.scaleFix();
 
-		<article>
-			<h2>Welkom</h2>
-			<p>Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.Lorem ipsum set dolor et yo momma.</p>
-			<p><button class="sgButton medium"><span>INSTANT button!!!</span></button></p>
-
-			<h2>Welkom</h2>
-			<p>Lorem ipsum set dolor et yo momma.</p>
-			<p><button class="sgButton medium"><span>INSTANT button!!!</span></button></p>
-		</article>
-    </div>
-    
-    
-    
-    
-    <footer>
-
-    </footer>
-  </div> <!--! end of #container -->
-
-
-  <!-- JavaScript at the bottom for fast page loading -->
-  <script src="http://www.anwb.nl/static/js/jquery/jquery-1.6.latest.min.js"></script>
-  <script src="js/mylibs/helper.js"></script>
-  <script src="js/script.js"></script>
-  
-  <script>
-    // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
-    MBP.scaleFix();
-    
-    // Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill
-    yepnope({
-      test : Modernizr.mq('(min-width)'),
-      nope : ['js/libs/respond.min.js']
-    });
-  </script>
-  
-
-</body>
+// Media Queries Polyfill https://github.com/shichuan/mobile-html5-boilerplate/wiki/Media-Queries-Polyfill
+yepnope({
+test : Modernizr.mq('(min-width)'),
+nope : ['js/libs/respond.min.js']
+});
+		</script>
+	</body>
 </html>

@@ -37,13 +37,9 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-ins { background-color: #ff9; color: #000; text-decoration: none; }
-mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
-del { text-decoration: line-through; }
 table { border-collapse: collapse; border-spacing: 0; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 input, select { vertical-align: middle; }
-
 
 /**
  * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
@@ -73,15 +69,8 @@ ol { list-style-type: decimal; }
 /* Remove margins for navigation lists */
 nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
 
-small { font-size: 85%; }
 strong, th { font-weight: bold; }
-
 td { vertical-align: top; }
-
-/* Set sub, sup without affecting line-height: gist.github.com/413930 */
-sub, sup { font-size: 75%; line-height: 0; position: relative; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
 
 textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
 
@@ -92,7 +81,7 @@ input[type="radio"] { vertical-align: text-bottom; }
 input[type="checkbox"] { vertical-align: bottom; }
 .iem7 input[type="checkbox"] { vertical-align: baseline; }
 
-/* Hand cursor on clickable input elements */
+/* Pointer cursor on clickable input elements */
 label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
@@ -109,11 +98,11 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+::-moz-selection{ background: #0055AC; color:#fff; text-shadow: none; }
+::selection { background:#0055AC; color:#fff; text-shadow: none; }
 
 /* j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; }
+a:link { -webkit-tap-highlight-color: #0055AC; }
 
 /* Make buttons play nice in IE:
    www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
@@ -129,11 +118,8 @@ button {  width: auto; overflow: visible; }
  */
 
 body, select, input, textarea {
-  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
-  background-color: #444;
-  color: white;
-  /* Set your base font here, to apply evenly */
-  /* font-family: Georgia, serif;  */
+	background-color: #ffd200;
+	color: #444;
 }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
@@ -160,22 +146,17 @@ a:hover { color: #ccc; }
 /* A hack for HTML5 contenteditable attribute on mobile */
 textarea.contenteditable {-webkit-appearance: none;}
 
-/* For image replacement */
-.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 
-
-/* Primary Styles for mobile
-   Author: Hayo Bethlehem
-*/
+/* Primary Styles for mobile */
 #website {
-	
 	display: block;
+	width: 640px;
+	border: 4px solid black;
 	position: relative;
 	margin: 0 auto;	
-
 }
 article {
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: #f0f0f0;
 	margin: 1%;
 	border-radius: 10px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
@@ -287,20 +268,7 @@ footer {
 		width: 98%;
 	}
 }*/
-@media only screen and (min-width: 640px) {
-	article {
-		width: 35%;
-		min-height: 200px;
-		float: left;
-	}
-	nav {
-		float: right;
-		width: 26%;
-	}
-	#illustration {
-		width: 73%;
-	}
-}
+
 
 /* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
 @media
@@ -326,11 +294,11 @@ nav#NavPanel {
 	-webkit-transition: all 0.3s ease-in-out;
 }
 nav#NavPanel.show {
-	height: 284px;
+	height: auto;
 	opacity: 1;
 }
 nav#NavPanel .bar {
-	height: 30px;
+	height: 1px;
 	margin-bottom: 5px;
 	background: #0055ac;
 }
@@ -353,7 +321,7 @@ nav#NavPanel > ul {
 	-webkit-transition: all 0.3s ease-in-out;
 }
 nav#NavPanel ul.hide {
-	left: -100%;
+	left: -100%; 
 }
 nav#NavPanel ul li ul {
 	position: absolute;
